@@ -1,0 +1,16 @@
+<mat-card>
+<div [hidden]="loggedIn">
+  <mat-card-content>
+     <form (ngSubmit)="onSubmit()">
+        <mat-form-field class="full-width-input">
+           <input type="text" matInput [(ngModel)]="credential.username" name="username" id='username' placeholder="Your Username">
+        </mat-form-field>
+        <mat-form-field class="full-width-input">
+            <input type="text" matInput [(ngModel)]="credential.password" name="password" id='password' placeholder="Your password">
+        </mat-form-field>
+        <button mat-raised-button color='primary'>Login</button>
+      </form>
+   </mat-card-content>
+   </div>
+</mat-card>
+
